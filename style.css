@@ -1,0 +1,351 @@
+/* style.css */
+body {
+  font-family: 'MedievalSharp', cursive;
+  background: url('images/bb.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #3c2f1c;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+
+
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+
+.level-bar {
+  background-color: #6b4e2f;
+  padding: 20px;
+  color: #fff6d3;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  border: 4px double #caa664;
+  border-radius: 10px;
+  gap: 20px;
+}
+
+.level-xp {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 20px;
+}
+
+.xp-label {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #fff6d3;
+}
+
+.xp-bar {
+  background: #d8b877;
+  border: 3px inset #a17536;
+  border-radius: 12px;
+  height: 30px;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: inset 0 0 5px #a17536;
+  position: relative;
+  flex: 1;
+}
+
+.xp-fill {
+  background: linear-gradient(to right, #ffda84, #f0b949);
+  height: 100%;
+  text-align: center;
+  font-size: 1rem;
+  color: #4b350d;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  line-height: 30px;
+  z-index: 2;
+}
+
+.xp-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: linear-gradient(to right, #ffda84, #f0b949);
+  z-index: 1;
+}
+
+.character-bio {
+  display: flex;
+  margin-top: 10px;
+  background: #fff6d3;
+  border: 4px solid #6b4e2f;
+  padding: 20px;
+  gap: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #caa664;
+  align-items: flex-start;
+}
+
+.large-avatar img {
+  width: 102%;
+  margin-top: 22px;
+  height: 102%;
+  object-fit: cover;
+  border-radius: 10px; /* matches frame style */
+  display: block;
+}
+
+
+.bio-content .description-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-top: 0px;
+}
+
+.resume-buttons {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 14px;
+  background: linear-gradient(#a56a2f, #814e1d);
+  color: #fff6d3;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  border: 2px solid #e2b77e;
+  transition: transform 0.2s;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(#b97c3f, #9a5d26);
+}
+
+.stats {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+  height: 350px;
+}
+.skills h3 {
+  margin-top: 0;
+  font-size: 1.3rem;
+  text-align: center;
+}
+.skills, .achievements {
+  flex: 1;
+  background: #fff6d3;
+  padding: 15px;
+  border: 3px solid #6b4e2f;
+  border-radius: 10px;
+  box-shadow: 0 0 8px #caa664;
+  overflow-y: auto;
+}
+
+.skills ul, .achievements ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills li {
+  margin: 10px 0;
+}
+
+.bar {
+  background: #d4c4a3;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 3px;
+}
+
+.bar div {
+  background: #a76d2f;
+  height: 100%;
+}
+
+.achievement-card {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  margin-top: 15px;
+  background: #f9ecce;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 4px #bfa774;
+}
+
+.achievements h3 {
+  margin-top: 0;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.logo-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #caa664;
+  color: #fff6d3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+.logo-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Or use contain if you want full image visible */
+  display: block;
+    border-radius: 50%;
+}
+
+.project-area {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 30px;
+  align-items: flex-start;
+}
+
+.quests, .right-column {
+  flex: 1;
+}
+
+.quest-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-height: 450px;
+  overflow-y: auto;
+  padding-right: 10px;
+  background: #fff6d3;
+  padding: 15px;
+  border: 3px solid #6b4e2f;
+  border-radius: 10px;
+  box-shadow: 0 0 8px #caa664;
+}
+
+.quest-list h3 {
+  margin-top: 0;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.quest-card {
+  background: #fef3d8;
+  border: 3px solid #6b4e2f;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #caa664;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.image-frame.square {
+  width: 160px;
+  height: 160px;
+  background: #e5d4b3;
+  border: 3px solid #6b4e2f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  overflow: hidden; /* Prevent overflow from large images */
+  flex-shrink: 0;
+}
+
+.image-frame.square img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Or use contain if you want full image visible */
+  display: block;
+}
+
+
+.quest-info p {
+  margin: 5px 0 10px;
+}
+
+.side-quests, .contact {
+  background: #fff6d3;
+  padding: 15px;
+  border: 3px solid #6b4e2f;
+  border-radius: 10px;
+  box-shadow: 0 0 8px #caa664;
+  margin-top: 0px;
+}
+
+.side-quests h3, .contact h3 {
+  margin-top: 0;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.side-card ul {
+  padding-left: 20px;
+}
+
+.contact {
+  
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ct img {
+  width: 59%;
+  height: 59%;
+  object-fit: cover; /* Or use contain if you want full image visible */
+  display: block;
+    border-radius: 50%;
+    margin-left: 25px;
+    
+}
+.contact-cards {
+  display: flex;
+  gap: 20px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-card {
+  flex: 1;
+  max-width: 120px;
+  text-align: center;
+ 
+  text-decoration: none;
+  color: #3c2f1c;
+}
+
+.contact-card .image-frame.square {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 8px;
+  font-size: 1.5rem;
+  background: #caa664;
+  color: #fff6d3;
+  border: 3px solid #6b4e2f;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
