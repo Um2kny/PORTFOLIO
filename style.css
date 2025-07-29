@@ -93,14 +93,17 @@ body {
 }
 
 .large-avatar img {
-  width: 102%;
-  margin-top: 22px;
-  height: 102%;
+  width: 150%;
+  margin-top: 20px;
+  height: 150%;
   object-fit: cover;
   border-radius: 10px; /* matches frame style */
   display: block;
 }
 
+.bio-content {
+margin-left: 140px;
+}
 
 .bio-content .description-text {
   font-size: 1.2rem;
@@ -300,8 +303,8 @@ body {
 
 .side-card ul {
   padding-left: 20px;
+  
 }
-
 .contact {
   
   gap: 20px;
@@ -311,12 +314,13 @@ body {
 }
 
 .ct img {
-  width: 59%;
-  height: 59%;
+  width: 55%;
+  height: 55%;
   object-fit: cover; /* Or use contain if you want full image visible */
   display: block;
     border-radius: 50%;
-    margin-left: 25px;
+    margin-left: 28px;
+    margin-bottom: 12px;
     
 }
 .contact-cards {
@@ -348,4 +352,120 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Mobile Optimizations for Android Devices */
+@media (max-width: 768px) {
+
+  body {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .level-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 1.2rem;
+    padding: 15px;
+  }
+
+  .level-xp {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .xp-bar {
+    height: 24px;
+  }
+
+  .character-bio {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .large-avatar img {
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+  }
+
+  .bio-content .description-text {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .resume-buttons {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .stats {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .skills, .achievements {
+    max-height: 250px;
+    font-size: 0.95rem;
+  }
+
+  .achievement-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .project-area {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .quest-list {
+    max-height: 400px;
+    padding: 10px;
+  }
+
+  .quest-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .image-frame.square {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+  }
+
+  .side-quests, .contact {
+    margin-top: 20px;
+  }
+
+  .contact-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .contact-card {
+    max-width: 100px;
+  }
+
+  .contact-card .image-frame.square {
+    width: 50px;
+    height: 50px;
+  }
+
+  .ct img {
+    width: 45px;
+    height: 45px;
+    margin: 10px auto;
+  }
 }
