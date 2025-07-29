@@ -1,4 +1,6 @@
 /* style.css */
+
+
 body {
   font-family: 'MedievalSharp', cursive;
   background: url('images/bb.png') no-repeat center center fixed;
@@ -7,6 +9,8 @@ body {
   margin: 0;
   padding: 0;
   font-size: 18px;
+    max-width: 100%;
+  overflow-x: hidden;
 }
 
 
@@ -304,7 +308,18 @@ margin-left: 140px;
 .side-card ul {
   padding-left: 20px;
   
+  
 }
+.side-quests {
+  background: #fff6d3;
+  padding: 15px;
+  border: 4px solid #6b4e2f;
+  border-radius: 10px;
+  box-shadow: 0 0 8px #caa664;
+  height: 231px; /* or max-height */
+  overflow-y: auto;
+}
+
 .contact {
   
   gap: 20px;
@@ -353,6 +368,22 @@ margin-left: 140px;
   align-items: center;
   justify-content: center;
 }
+.game-footer {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: 'MedievalSharp', cursive;
+  background: rgba(107, 78, 47, 0.9); /* RPG-style brown with transparency */
+  color: #fff6d3;
+  padding: 12px 20px;
+  margin-top: 10px;
+  border-top: 3px double #caa664;
+  border-bottom: 3px double #caa664;
+  border-radius: 12px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 /* Mobile Optimizations for Android Devices */
 @media (max-width: 768px) {
@@ -360,10 +391,18 @@ margin-left: 140px;
   body {
     font-size: 16px;
     padding: 10px;
+      max-width: 100%;
+  overflow-x: hidden;
+  margin-left: 15px;
+  
+
   }
 
   .container {
-    padding: 10px;
+   width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+
   }
 
   .level-bar {
@@ -445,7 +484,7 @@ margin-left: 140px;
   }
 
   .side-quests, .contact {
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
   .contact-cards {
@@ -457,8 +496,11 @@ margin-left: 140px;
 
   .contact-card {
     max-width: 100px;
+ 
   }
-
+.contact{
+  margin-top: 30px;
+}
   .contact-card .image-frame.square {
     width: 50px;
     height: 50px;
