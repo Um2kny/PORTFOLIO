@@ -1,4 +1,15 @@
 // script.js
+// 🎵 BACKGROUND MUSIC SETUP
+const music = new Audio("data/bg.mp3");
+music.loop = true;
+music.autoplay = true;
+music.muted = true; // start muted for autoplay to work
+
+// Unmute and play when user clicks anywhere
+document.addEventListener("click", () => {
+  music.muted = false;
+  music.play().catch(err => console.warn("Music play blocked:", err));
+}, { once: true });
 
 const birthDate = new Date("2004-07-19T00:00:00");
 const totalYearMinutes = 525600;
