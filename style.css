@@ -1,5 +1,31 @@
 /* style.css */
 
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 20px;                 /* width of scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f8e6c2;          /* parchment-like track */
+  border-radius: 10px;
+  border: 2px solid #8b5a2b;    /* brown border for fantasy style */
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #c19a6b, #8b5a2b); /* golden-brown gradient */
+  border-radius: 10px;
+  border: 2px solid #5a3b1a;    /* darker outline for depth */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #d2a679, #704214); /* highlight on hover */
+}
+
+/* Firefox */
+* {
+  scrollbar-width: bold;
+  scrollbar-color: #8b5a2b #f8e6c2; /* thumb + track */
+}
 
 body {
   font-family: 'MedievalSharp', cursive;
