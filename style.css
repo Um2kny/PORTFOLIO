@@ -330,11 +330,17 @@ margin-left: 140px;
   font-size: 1.3rem;
   text-align: center;
 }
+ul li a {
+  color: black;          /* Make link text black */
+  text-decoration: none; /* Remove underline */
+}
 
+ul li a:hover {
+  color: #555;           /* Dark gray on hover (optional) */
+  text-decoration: underline; /* Add underline on hover (optional) */
+}
 .side-card ul {
   padding-left: 20px;
-  
-  
 }
 .side-quests {
   background: #fff6d3;
@@ -476,11 +482,14 @@ margin-left: 140px;
     height: auto;
   }
 
-  .skills, .achievements {
+  .skills{
     max-height: 250px;
     font-size: 0.95rem;
   }
-
+  .achievements {
+    max-height: 250px;
+    font-size: 0.95rem;
+  }
   .achievement-card {
     flex-direction: column;
     align-items: center;
@@ -542,7 +551,7 @@ margin-left: 0px;
   }
   .game-footer {
 
-  width: 90%;
+  width: 80%;
 
 }
 }
